@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+
+/* spotlight effect */
+.group:hover .group-hover\\:opacity-100 {
+  --x: 50%;
+  --y: 50%;
+}
+

@@ -12,7 +12,7 @@ const resumeData = {
     linkedin: 'https://www.linkedin.com/in/aryan-chaudhary-83571a252/',
     github: 'https://github.com/Aryan-chaudhry/',
     leetcode: 'https://leetcode.com/u/Aryan_306/',
-    portfolio: 'https://aryn-folio.netlify.app/',
+    portfolio: '/',
   },
   skills: [
     'C++', 'Java (Intermediate)', 'Python', 'SQL', 'HTML', 'CSS', 'JavaScript',

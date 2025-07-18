@@ -25,7 +25,7 @@ const Projects = () => {
       title: 'Calculator App',
       description: 'Elegant calculator using HTML, CSS, JS. Deployed on Netlify.',
       link: 'https://aryan2629calculator.netlify.app/',
-      github: 'https://github.com/Aryan-chaudhry/Projects',
+      github: 'https://github.com/Aryan-chaudhry/Calculator',
       image: calculator,
     },
     {

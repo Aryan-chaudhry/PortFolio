@@ -21,12 +21,12 @@ const COMMANDS = [
 const SLIDES = [
   {
     title: 'about',
-    content: "👋 Hi, I'm Aryan Chaudhary.\n💻 MERN Stack Developer passionate about building full-stack web applications and solving real-world problems with clean, scalable code.",
+    content: "👋 Hi, I'm Aryan Chaudhary. \n Problem solving on Coding platform \n💻 MERN Stack Developer passionate about building full-stack web applications and solving real-world problems with clean, scalable code.",
   },
   {
     title: 'skills',
     content:
-      "🧠 Core: C++, Java, Python, SQL, JavaScript\n💻 Web: React.js, Node.js, Express.js, EJS, Tailwind CSS\n🛠️ Tools: Git, GitHub, VS Code, Postman, MongoDB, MySQL\n📚 Concepts: DSA, OOP, OS, DBMS, Networking",
+      "🧠 Core: C++, Java, Python, SQL, JavaScript\n💻 Web: React.js, Node.js, Express.js, EJS, Tailwind CSS\n🛠️ Tools: Git, GitHub, VS Code, Postman, MongoDB, MySQL\n📚 Concepts: DSA, OOP, OS, DBMS",
   },
   {
     title: 'education',
@@ -37,11 +37,11 @@ const SLIDES = [
     title: 'projects',
     content:
 `🌐 ClimaVision 360
-- Real-time global weather, 3D globe, alerts
+- Real-time Weather forecasting application with global weather, 3D globe, radar alerts, earthquick's and Tsunami alerts
 🔗 Type: climavision
 
 🏠 Visitly
-- Rental site with 360° tours, real-time listings
+- Rental site for Home, shops and showrooms and many more with with 360° tours, real-time listings, map integration
 🔗 Type: visitly
 
 🧮 Calculator
@@ -49,7 +49,7 @@ const SLIDES = [
 🔗 Type: calculator
 
 📊 LeetProgress
-- LeetCode profile and contest dashboard
+- Track your Leetcode profile to showcase it to recruiter, teach employees
 🔗 Type: leetprogress`
   },
   {

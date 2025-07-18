@@ -4,8 +4,8 @@ import Header from '../components/Header';
 import ProjectCard from '../components/ProjectCard';
 
 // Images
-import visitly from '../utils/visitly.png';
-import leetultra from '../utils/leetProgress.png';
+import visitly from '../utils/Visitly.png';
+import leetultra from '../utils/LeetProgress.png';
 import weather from '../utils/Weather.png';
 import calculator from '../utils/Calculator.png';
 

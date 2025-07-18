@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import { Typewriter } from 'react-simple-typewriter';
-import ProfilePhoto from '../utils/ProfilePhoto.png';
+import ProfilePhoto from '../utils/Profilephoto.png';
 
 const Home = () => {
   useEffect(() => {

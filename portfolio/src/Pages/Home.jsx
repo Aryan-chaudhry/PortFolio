@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import { Typewriter } from 'react-simple-typewriter';
-import profilePhoto from '../utils/ProfilePhoto.png';
+import ProfilePhoto from '../utils/ProfilePhoto.png';
 
 const Home = () => {
   useEffect(() => {
@@ -26,7 +26,7 @@ const Home = () => {
         <div className="relative group">
           <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-1000"></div>
           <div className="w-40 h-40 md:w-52 md:h-52 relative rounded-full overflow-hidden border-[3px] border-neutral-700 backdrop-blur-md shadow-2xl z-10">
-            <img src={profilePhoto} alt="Aryan" className="w-full h-full object-cover" />
+            <img src={ProfilePhoto} alt="Aryan" className="w-full h-full object-cover" />
           </div>
         </div>
 

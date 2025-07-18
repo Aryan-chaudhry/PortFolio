@@ -55,13 +55,13 @@ const Home = () => {
         {/* Buttons */}
         <div className="mt-10 flex flex-wrap justify-center gap-4 animate-fadeInUp delay-500">
           <a
-            href="/contact"
+            href="https://aryan-portfolio-2011.vercel.app/contact"
             className="px-6 py-3 bg-white text-black hover:bg-gray-200 rounded-lg font-semibold shadow-xl transition-all duration-300 hover:scale-105"
           >
             Hire Me
           </a>
           <a
-            href="/resume"
+            href="https://aryan-portfolio-2011.vercel.app/resume"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 border border-white hover:bg-white hover:text-black text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105"

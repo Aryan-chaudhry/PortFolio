@@ -27,10 +27,10 @@ const About = () => {
         </p>
 
         <div className="mt-10 flex justify-center gap-6 animate-fadeInUp delay-600">
-          <a href="/resume" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white text-black hover:bg-gray-200 rounded-lg font-semibold shadow-md transition hover:scale-105">
+          <a href="https://aryan-portfolio-2011.vercel.app/resume" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white text-black hover:bg-gray-200 rounded-lg font-semibold shadow-md transition hover:scale-105">
             View Resume
           </a>
-          <a href="/contact" className="px-6 py-3 border border-white text-white hover:bg-white hover:text-black rounded-lg font-semibold shadow-md transition hover:scale-105">
+          <a href="https://aryan-portfolio-2011.vercel.app/contact" className="px-6 py-3 border border-white text-white hover:bg-white hover:text-black rounded-lg font-semibold shadow-md transition hover:scale-105">
             Contact Me
           </a>
         </div>

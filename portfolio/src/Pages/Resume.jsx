@@ -108,7 +108,7 @@ const Resume = () => {
 
   return (
     <div className="relative w-full min-h-screen bg-gradient-to-br from-[#000000] via-[#050505] to-[#202020] text-white font-sans overflow-x-hidden">
-      <div className="custom-cursor w-6 h-6 border-2 border-white rounded-full fixed pointer-events-none z-[9999] transition-transform duration-75" />
+      {/* <div className="custom-cursor w-6 h-6 border-2 border-white rounded-full fixed pointer-events-none z-[9999] transition-transform duration-75" /> */}
       <Header />
 
       <section className="px-6 py-20 max-w-6xl mx-auto text-center">

@@ -52,7 +52,7 @@ const Achievements = () => {
 
   return (
     <div className="relative w-full min-h-screen bg-gradient-to-br from-black via-[#0b0b0b] to-[#1a1a1a] text-white overflow-hidden font-sans">
-      <div className="custom-cursor w-6 h-6 border-2 border-white rounded-full fixed pointer-events-none z-[9999] transition-transform duration-75" />
+      {/* <div className="custom-cursor w-6 h-6 border-2 border-white rounded-full fixed pointer-events-none z-[9999] transition-transform duration-75" /> */}
 
       <Header />
 

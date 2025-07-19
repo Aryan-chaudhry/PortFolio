@@ -10,6 +10,7 @@ const Header = () => {
     { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
     { name: 'Skills', path: '/skills' },
+    { name: 'Achievements', path: '/achievements' },
     { name: 'Contact', path: '/contact' },
     { name: 'Resume', path: '/resume' },
     { name: 'Terminal', path: '/terminal' },
@@ -21,15 +22,15 @@ const Header = () => {
         <h1 className="text-2xl font-bold text-blue-400 text-4xl">Aryan</h1>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-15">
+        <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <NavLink
               key={item.name}
               to={item.path}
               className={({ isActive }) =>
                 isActive
-                  ? 'text-blue-400 font-semibold'
-                  : 'text-white hover:text-blue-400 transition'
+                  ? 'text-blue-400 font-semibold border-b-2 border-blue-400 pb-1 transition-all duration-200'
+                  : 'text-white hover:text-blue-400 transition pb-1'
               }
             >
               {item.name}
@@ -53,8 +54,8 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? 'block text-blue-400 font-semibold'
-                  : 'block text-white hover:text-blue-400 transition'
+                  ? 'block text-blue-400 font-semibold border-b border-blue-400 pb-1'
+                  : 'block text-white hover:text-blue-400 transition pb-1'
               }
             >
               {item.name}

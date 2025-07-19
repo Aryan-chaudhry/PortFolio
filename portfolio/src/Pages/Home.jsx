@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import { Typewriter } from 'react-simple-typewriter';
 import ProfilePhoto from '../utils/Profilephoto.png';
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const Home = () => {
         </div>
 
         {/* Name and Typewriter */}
-        <h1 className="text-4xl md:text-6xl font-extrabold mt-6 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent drop-shadow-lg animate-fadeInUp">
+        <h1 className="text-4xl md:text-6xl font-bold mt-4 bg-gradient-to-r from-white via-gray-300 to-white bg-clip-text text-transparent drop-shadow-lg animate-fadeInUp">
           Hi, I’m Aryan
         </h1>
 
@@ -54,20 +55,18 @@ const Home = () => {
 
         {/* Buttons */}
         <div className="mt-10 flex flex-wrap justify-center gap-4 animate-fadeInUp delay-500">
-          <a
-            href="https://aryan-portfolio-2011.vercel.app/contact"
-            className="px-6 py-3 bg-white text-black hover:bg-gray-200 rounded-lg font-semibold shadow-xl transition-all duration-300 hover:scale-105"
+         <NavLink
+          to="/contact"
+           className="px-6 py-3 bg-white text-black hover:bg-gray-200 rounded-lg font-semibold shadow-xl transition-all duration-300 hover:scale-105"
           >
-            Hire Me
-          </a>
-          <a
-            href="https://aryan-portfolio-2011.vercel.app/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border border-white hover:bg-white hover:text-black text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105"
+          Hire Me
+        </NavLink>
+          <NavLink
+          to="/resume"
+          className="px-6 py-3 border border-white hover:bg-white hover:text-black text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105"
           >
-            Download Resume
-          </a>
+          Download Resume
+        </NavLink>
         </div>
       </section>
     </div>

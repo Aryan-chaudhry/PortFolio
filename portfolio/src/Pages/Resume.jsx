@@ -76,15 +76,15 @@ const resumeData = {
 const Resume = () => {
   const cardRef = useRef(null);
 
-  useEffect(() => {
-    const cursor = document.querySelector('.custom-cursor');
-    const move = (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    };
-    window.addEventListener('mousemove', move);
-    return () => window.removeEventListener('mousemove', move);
-  }, []);
+  // useEffect(() => {
+  //   const cursor = document.querySelector('.custom-cursor');
+  //   const move = (e) => {
+  //     cursor.style.left = `${e.clientX}px`;
+  //     cursor.style.top = `${e.clientY}px`;
+  //   };
+  //   window.addEventListener('mousemove', move);
+  //   return () => window.removeEventListener('mousemove', move);
+  // }, []);
 
   const handleMouseMove = (e) => {
     const rect = cardRef.current.getBoundingClientRect();

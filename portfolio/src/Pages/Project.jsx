@@ -10,15 +10,15 @@ import weather from '../utils/Weather.png';
 import calculator from '../utils/Calculator.png';
 
 const Projects = () => {
-  useEffect(() => {
-    const cursor = document.querySelector('.custom-cursor');
-    const move = (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    };
-    window.addEventListener('mousemove', move);
-    return () => window.removeEventListener('mousemove', move);
-  }, []);
+  // useEffect(() => {
+  //   const cursor = document.querySelector('.custom-cursor');
+  //   const move = (e) => {
+  //     cursor.style.left = `${e.clientX}px`;
+  //     cursor.style.top = `${e.clientY}px`;
+  //   };
+  //   window.addEventListener('mousemove', move);
+  //   return () => window.removeEventListener('mousemove', move);
+  // }, []);
 
   const projects = [
     {

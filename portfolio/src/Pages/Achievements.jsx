@@ -40,15 +40,15 @@ const achievements = [
 
 const Achievements = () => {
 
-   useEffect(() => {
-      const cursor = document.querySelector('.custom-cursor');
-      const move = (e) => {
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-      };
-      window.addEventListener('mousemove', move);
-      return () => window.removeEventListener('mousemove', move);
-    }, []);
+  //  useEffect(() => {
+  //     const cursor = document.querySelector('.custom-cursor');
+  //     const move = (e) => {
+  //       cursor.style.left = `${e.clientX}px`;
+  //       cursor.style.top = `${e.clientY}px`;
+  //     };
+  //     window.addEventListener('mousemove', move);
+  //     return () => window.removeEventListener('mousemove', move);
+  //   }, []);
 
   return (
     <div className="relative w-full min-h-screen bg-gradient-to-br from-black via-[#0b0b0b] to-[#1a1a1a] text-white overflow-hidden font-sans">

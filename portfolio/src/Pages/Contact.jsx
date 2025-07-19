@@ -15,15 +15,15 @@ const Contact = () => {
   const [isSent, setIsSent] = useState(false);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const cursor = document.querySelector('.custom-cursor');
-    const move = (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    };
-    window.addEventListener('mousemove', move);
-    return () => window.removeEventListener('mousemove', move);
-  }, []);
+  // useEffect(() => {
+  //   const cursor = document.querySelector('.custom-cursor');
+  //   const move = (e) => {
+  //     cursor.style.left = `${e.clientX}px`;
+  //     cursor.style.top = `${e.clientY}px`;
+  //   };
+  //   window.addEventListener('mousemove', move);
+  //   return () => window.removeEventListener('mousemove', move);
+  // }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

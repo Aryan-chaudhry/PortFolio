@@ -3,15 +3,15 @@ import { NavLink } from 'react-router-dom';
 import Header from '../components/Header';
 
 const About = () => {
-  useEffect(() => {
-    const cursor = document.querySelector('.custom-cursor');
-    const move = (e) => {
-      cursor.style.left = `${e.clientX}px`;
-      cursor.style.top = `${e.clientY}px`;
-    };
-    window.addEventListener('mousemove', move);
-    return () => window.removeEventListener('mousemove', move);
-  }, []);
+  // useEffect(() => {
+  //   const cursor = document.querySelector('.custom-cursor');
+  //   const move = (e) => {
+  //     cursor.style.left = `${e.clientX}px`;
+  //     cursor.style.top = `${e.clientY}px`;
+  //   };
+  //   window.addEventListener('mousemove', move);
+  //   return () => window.removeEventListener('mousemove', move);
+  // }, []);
 
   return (
     <div className="relative w-full min-h-screen bg-gradient-to-br from-[#000000] via-[#050505] to-[#202020] text-white overflow-hidden font-sans">

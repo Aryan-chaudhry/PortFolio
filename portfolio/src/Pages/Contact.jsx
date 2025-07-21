@@ -1,8 +1,8 @@
 // src/pages/Contact.jsx
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin } from 'react-icons/fa'; // ✅ Add this line
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,18 +12,10 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
   const [isSent, setIsSent] = useState(false);
   const [error, setError] = useState(null);
-
-  // useEffect(() => {
-  //   const cursor = document.querySelector('.custom-cursor');
-  //   const move = (e) => {
-  //     cursor.style.left = `${e.clientX}px`;
-  //     cursor.style.top = `${e.clientY}px`;
-  //   };
-  //   window.addEventListener('mousemove', move);
-  //   return () => window.removeEventListener('mousemove', move);
-  // }, []);
+  const [loading, setLoading] = useState(false); // ✅ Loading state
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -32,6 +24,7 @@ const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     setError(null);
+    setLoading(true); // ✅ Start loading
 
     try {
       const response = await fetch("https://portfolio-backend-a6gd.onrender.com/api/send-email", {
@@ -52,13 +45,12 @@ const Contact = () => {
     } catch (err) {
       setError(err.message);
     }
+
+    setLoading(false); // ✅ Stop loading
   };
 
   return (
     <div className="relative w-full min-h-screen bg-gradient-to-br from-[#000000] via-[#050505] to-[#202020] text-white overflow-hidden font-sans">
-      {/* Custom Cursor */}
-      {/* <div className="custom-cursor w-6 h-6 border-2 border-white rounded-full fixed pointer-events-none z-[9999] transition-transform duration-75" /> */}
-
       <Header />
 
       <section className="px-6 py-20 max-w-xl mx-auto text-center relative z-10">
@@ -75,7 +67,6 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Optional soft glowing animated border */}
           <div className="absolute top-0 left-0 w-full h-full rounded-2xl pointer-events-none border border-white/20 blur-md animate-pulse opacity-10" />
 
           <div className="flex flex-col md:flex-row gap-4">
@@ -125,13 +116,19 @@ const Contact = () => {
             className="w-full p-3 rounded-md bg-transparent text-white placeholder-gray-400 border border-white/10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:shadow-[0_0_10px_#3b82f6]"
             required
           />
+
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: !loading ? 1.05 : 1 }}
+            whileTap={{ scale: !loading ? 0.95 : 1 }}
             type="submit"
-            className="w-full py-3 rounded-md bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-600 hover:to-blue-600 transition font-semibold shadow"
+            disabled={loading}
+            className="w-full py-3 rounded-md bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-600 hover:to-blue-600 transition font-semibold shadow flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Send Message
+            {loading ? (
+              <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            ) : (
+              "Send Message"
+            )}
           </motion.button>
         </motion.form>
 
@@ -143,6 +140,8 @@ const Contact = () => {
             transition={{ duration: 0.4 }}
           >
             🎉 Your message has been sent to Aryan successfully!
+            <br />
+            Thankyou!
           </motion.div>
         )}
 
@@ -160,7 +159,6 @@ const Contact = () => {
         <div className="mt-12 text-gray-300 text-center">
           Or reach out via:
           <div className="flex justify-center gap-10 mb-12 mt-4">
-            {/* GitHub */}
             <a
               href="https://github.com/Aryan-chaudhry/"
               target="_blank"
@@ -173,7 +171,6 @@ const Contact = () => {
               </span>
             </a>
 
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/aryan-chaudhary-83571a252/"
               target="_blank"

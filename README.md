@@ -114,7 +114,7 @@ dont add them directly in backend app, set up them in .env and never push your e
 ```
 PORT=your_valid_port
 
-EMAIL_PASSWORD=your_app_password
+EMAIL_PASSWORD=your_app_password  (it is not your email password)
 
 EMAIL_OWNER=your_email@example.com
 ```

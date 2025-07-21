@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react'; // or use HeroIcons
+import Logo from '../../public/Logo.png'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,15 @@ const Header = () => {
   return (
     <header className="bg-dark-950 text-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-blue-400 text-4xl">Aryan</h1>
+        
+        <NavLink  to="/"   className="flex items-center space-x-3 hover:opacity-80 transition duration-200">
+          <img src={Logo} alt="Logo" className="h-8 w-8 object-contain" />
+          <span   className="text-blue-400 text-4xl"   style={{ fontFamily: "'Dancing Script', cursive" }}>
+          Aryan...
+          </span>
+        </NavLink>
+
+
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8">

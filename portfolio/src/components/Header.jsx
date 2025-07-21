@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-dark-950 text-white shadow-md sticky top-0 z-50">
+    <header className="bg-dark-950/80 backdrop-blur-md text-white shadow-md fixed top-0 w-full z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         
         <NavLink  to="/"   className="flex items-center space-x-3 hover:opacity-80 transition duration-200">

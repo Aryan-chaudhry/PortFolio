@@ -203,7 +203,7 @@ const Resume = () => {
           <p className="text-sm text-gray-400 mb-2">Download Resume As:</p>
           <div className="flex justify-center gap-4">
             <a
-              href="https://drive.google.com/file/d/1Xh9d7VZD8GxTmoDsaYlWscNYp82-oM0Y/view?usp=sharing"
+              href="https://drive.google.com/file/d/1y4zX6WrdUg6SVGH8DDsw6226TOw4XZao/view?usp=sharing"
               target='_blank'
               rel="noopener noreferrer"
               className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg shadow-md"
